@@ -1,2 +1,3 @@
 C:\Users\Administrator\Desktop\Kjw2\x64\Debug\Kjw2.exe
 C:\Users\Administrator\Desktop\김주완2\KjwCpp\Kjw2\x64\Debug\Kjw2.exe
+C:\Users\Admin\Desktop\KjwCpp\Kjw2\x64\Debug\Kjw2.exe

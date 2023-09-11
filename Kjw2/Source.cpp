@@ -2,25 +2,27 @@
 
 int main()
 {
-	int arr[100];
-	int N, v = 0;
+	int N = 0;
+
+	int min = 1000000;
+	int max = -1000000;
+	int input = 0;
 
 	scanf_s("%d", &N);
 	for (int i = 0; i < N; i++)
 	{
-		scanf_s("%d", &arr[i]);
-	}
-	
-	scanf_s("%d", &v);
-	int res = 0;
-	for (int i = 0; i < N; i++)
-	{
-		if (arr[i] == v)
+		scanf_s("%d", &input);
+		if (input < min)
 		{
-			res++;
+			min = input;
+		}
+		if (input > max)
+		{
+			max = input;
 		}
 	}
-	printf("%d", res);
+	printf("%d %d", min, max);
+
 
 
 	return 0;
