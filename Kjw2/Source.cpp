@@ -3,24 +3,27 @@ using namespace std;
 
 int main()
 {
-	int N, M, a, j, k;
-	int arr[100] = { 0, };
+	int N, M, a, b;
+	int arr[100];
 
 	cin >> N >> M;
 
+	for (int i = 0; i < 100; i++)
+	{
+		arr[i] = i + 1;
+	}
+
 	for (int i = 0; i < M; i++)
 	{
-		cin >> a >> j >> k;
-
-		for (int i = a; i <= j; i++)
+		cin >> a >> b;
+		for (int i = a; a <= b; i++)
 		{
-			arr[i - 1] = k;
+			arr[a - 1] = arr[b - 1];
 		}
 	}
-	for (int i = 0; i < N; i++)
-	{
-		printf("%d ", arr[i]);
-	}
+	for(int i = 0; i < N; i++)
+
+
 
 	return 0;
 }
