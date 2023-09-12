@@ -1,29 +1,26 @@
-#include<stdio.h>
+#include<iostream>
+using namespace std;
 
 int main()
 {
-	int N = 0;
+	int N, M, a, j, k;
+	int arr[100] = { 0, };
 
-	int min = 1000000;
-	int max = -1000000;
-	int input = 0;
+	cin >> N >> M;
 
-	scanf_s("%d", &N);
-	for (int i = 0; i < N; i++)
+	for (int i = 0; i < M; i++)
 	{
-		scanf_s("%d", &input);
-		if (input < min)
+		cin >> a >> j >> k;
+
+		for (int i = a; i <= j; i++)
 		{
-			min = input;
-		}
-		if (input > max)
-		{
-			max = input;
+			arr[i - 1] = k;
 		}
 	}
-	printf("%d %d", min, max);
-
-
+	for (int i = 0; i < N; i++)
+	{
+		printf("%d ", arr[i]);
+	}
 
 	return 0;
 }
