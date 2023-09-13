@@ -16,13 +16,15 @@ int main()
 	for (int i = 0; i < M; i++)
 	{
 		cin >> a >> b;
-		for (int i = a; a <= b; i++)
+		for (int i = a; i <= b; i++)
 		{
 			arr[a - 1] = arr[b - 1];
 		}
 	}
-	for(int i = 0; i < N; i++)
-
+	for (int i = 0; i < N; i++)
+	{
+		printf("%d ", arr[i]);
+	}
 
 
 	return 0;
