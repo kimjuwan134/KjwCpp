@@ -4,6 +4,7 @@ Vulture::Vulture()
 {
 	health = 80;
 	attack = 20;
+	cout << "国贸 积己" << endl;
 }
 
 void Vulture::Move()
@@ -14,4 +15,9 @@ void Vulture::Move()
 void Vulture::Attack()
 {
 	cout << "国贸 傍拜" << endl;
+}
+
+Vulture::~Vulture()
+{
+	cout << "国贸 昏力" << endl;
 }

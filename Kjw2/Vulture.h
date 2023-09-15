@@ -17,6 +17,8 @@ public :
 
 	virtual void Attack() override;
 
+	~Vulture();
+
 #pragma endregion
 
 };
