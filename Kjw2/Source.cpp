@@ -14,8 +14,8 @@ int main()
 	for (int i = 0; i < 28; i++)
 	{
 		cin >> A;
-
-		couy << A << endl;
+		if()
+		cout << A << endl;
 		for (int i = 0; i < 28; i++)
 		{
 			arr;

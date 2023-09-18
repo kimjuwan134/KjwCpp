@@ -13,24 +13,39 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\Mechanics">
+      <UniqueIdentifier>{46d90e87-2b23-4a04-9556-22ad2e3645c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Mechanics">
+      <UniqueIdentifier>{14aace0e-d3bb-418d-bc32-1a942ff481fb}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Camera.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Mechanic.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="Goliath.cpp">
+      <Filter>Source Files\Mechanics</Filter>
     </ClCompile>
-    <ClCompile Include="Vulture.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="Mechanic.cpp">
+      <Filter>Source Files\Mechanics</Filter>
     </ClCompile>
     <ClCompile Include="SiegeTank.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Mechanics</Filter>
     </ClCompile>
-    <ClCompile Include="Goliath.cpp">
+    <ClCompile Include="Vulture.cpp">
+      <Filter>Source Files\Mechanics</Filter>
+    </ClCompile>
+    <ClCompile Include="Marine.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Kjw2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Firebet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Ghost.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -38,16 +53,28 @@
     <ClInclude Include="Camera.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Mechanic.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="Goliath.h">
+      <Filter>Header Files\Mechanics</Filter>
     </ClInclude>
-    <ClInclude Include="Vulture.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="Mechanic.h">
+      <Filter>Header Files\Mechanics</Filter>
     </ClInclude>
     <ClInclude Include="SiegeTank.h">
+      <Filter>Header Files\Mechanics</Filter>
+    </ClInclude>
+    <ClInclude Include="Vulture.h">
+      <Filter>Header Files\Mechanics</Filter>
+    </ClInclude>
+    <ClInclude Include="Unit.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Goliath.h">
+    <ClInclude Include="Marine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Firebet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Ghost.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
