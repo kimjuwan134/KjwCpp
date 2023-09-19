@@ -1,4 +1,3 @@
 ﻿  Kjw2.cpp
-  Marine.cpp
-  Generating Code...
+C:\Users\Administrator\Desktop\김주완2\KjwCpp\Kjw2\Kjw2.cpp(39): warning C4172: returning address of local variable or temporary: data
   Kjw2.vcxproj -> C:\Users\Administrator\Desktop\김주완2\KjwCpp\Kjw2\x64\Debug\Kjw2.exe

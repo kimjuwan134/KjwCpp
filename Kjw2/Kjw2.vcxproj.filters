@@ -19,6 +19,12 @@
     <Filter Include="Source Files\Mechanics">
       <UniqueIdentifier>{14aace0e-d3bb-418d-bc32-1a942ff481fb}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Bionic">
+      <UniqueIdentifier>{85b21e8e-a4e4-4f43-b290-37246dceb298}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Bionic">
+      <UniqueIdentifier>{db1a84e8-1d9c-4295-98d8-d2197e9bf6cf}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Camera.cpp">
@@ -37,15 +43,15 @@
       <Filter>Source Files\Mechanics</Filter>
     </ClCompile>
     <ClCompile Include="Marine.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Kjw2.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Firebet.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Bionic</Filter>
     </ClCompile>
     <ClCompile Include="Ghost.cpp">
+      <Filter>Source Files\Bionic</Filter>
+    </ClCompile>
+    <ClCompile Include="Firebet.cpp">
+      <Filter>Source Files\Bionic</Filter>
+    </ClCompile>
+    <ClCompile Include="Kjw2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -65,17 +71,17 @@
     <ClInclude Include="Vulture.h">
       <Filter>Header Files\Mechanics</Filter>
     </ClInclude>
-    <ClInclude Include="Unit.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Marine.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Firebet.h">
-      <Filter>Header Files</Filter>
+      <Filter>Bionic</Filter>
     </ClInclude>
     <ClInclude Include="Ghost.h">
-      <Filter>Header Files</Filter>
+      <Filter>Bionic</Filter>
+    </ClInclude>
+    <ClInclude Include="Marine.h">
+      <Filter>Bionic</Filter>
+    </ClInclude>
+    <ClInclude Include="Unit.h">
+      <Filter>Bionic</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

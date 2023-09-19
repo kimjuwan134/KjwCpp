@@ -1,5 +1,11 @@
 #include "Ghost.h"
 
+Ghost::Ghost()
+{
+	health = 50;
+	maxHP = health;
+}
+
 void Ghost::Skill()
 {
 	cout << "Å¬·ÎÅ·" << endl;
@@ -7,7 +13,7 @@ void Ghost::Skill()
 
 void Ghost::SetHP(int value)
 {
-	if (0 <= value && value <= 150)
+	if (0 <= value && value <= maxHP)
 	{
 		health = value;
 	}
@@ -20,4 +26,9 @@ void Ghost::SetHP(int value)
 int Ghost::GetHP()
 {
 	return health;
+}
+
+void Ghost::RecoveryHP()
+{
+	health = maxHP;
 }
