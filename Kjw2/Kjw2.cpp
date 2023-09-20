@@ -1,53 +1,110 @@
 #include <iostream>
+#include <memory>
 
 using namespace std;
 
-class Animal
+
+#pragma region RAII 패턴
+
+// 자원의 안전한 사용을 위해 객체가 쓰이는 범위를 벗어나게 되면
+// 자원을 해제해주는 기법.
+
+class File
 {
-private :
-	char blood;
-	int age;
-	float height;
-
-public :
-	Animal(int m_age, float m_height) : age(m_age), height(m_height)
+public : 
+	File()
 	{
-		cout << "age : " << age << endl;
-		cout << "height : " << height << endl;
-	}
-	
-#pragma region this 포인터
-	
-	// 객체 자기 자신을 가리키는 포인터.
-
-	Animal(char blood, int age, float height)
-	{
-		this->blood = blood;
-		this->age = age;
-		this->height = height;
-		
-
-		cout << "객체의 주소 : " << this << endl;
+		cout << "Create File" << endl;
 	}
 
-#pragma endregion
+	~File()
+	{
+		cout << "Delete File" << endl;
+	}
 };
 
-int* Value()
+#pragma endregion
+
+class Player
 {
-	int data = 10;
-	return &data;
-}
+private :
+	int health;
+
+#pragma region weak 포인터
+
+	// 자신이 참조하고 있는 원시 포인터의 강한 참조 카운트가 0이 되면
+	// expired 라는 상태가 되는데, 이는 원시 포인터의 참조 카운트가
+	// 0이 되어 메모리가 해제되었으므로, 이 원시 포인터를 소유한
+	// weak 포인터를 유효하지 않다고 판단하여 해제하는 포인터.
+
+#pragma endregion
+
+	weak_ptr<Player> partner1;
+
+public :
+	Player()
+	{
+		cout << "Create Player" << endl;
+	}
+
+	~Player()
+	{
+		cout << "Delete Player" << endl;
+	}
+
+	void SetPartner(weak_ptr<Player> partner)
+	{
+		this->partner1 = partner;
+	}
+};
 
 int main()
 {
-	//Animal animal('A', 3, 3.25f);
+#pragma region unique 포인터
 
-	int* ptr = Value();
+	// 단, 하나의 객체만 가리킬 수 있는 스마트 포인터.
 
-	cout << *ptr << endl;
-	*ptr = 300;
-	cout << *ptr << endl;
+	//unique_ptr<File> uptr1(new File);
+
+	//cout << "uptr1의 값 : " << uptr1 << endl;
+
+	//unique_ptr<File> uptr2 = make_unique<File>();
+
+	//cout << "uptr2의 값 : " << uptr2 << endl;
+
+	//// 하나의 unique 포인터는 하나의 객체만 가질 수 있습니다.
+	//// 하지만 객체에 대한 소유권을 이전하는 것은 가능합니다.
+	//unique_ptr<File> uptr3 = move(uptr2);
+
+	//cout << "uptr3의 값 : " << uptr3 << endl;
+	//cout << "uptr2의 값 : " << uptr2 << endl;
+
+#pragma endregion
+
+#pragma region shared 포인터
+
+	// 하나의 객체에 여러 개의 포인터가 공유할 수 있으며, 
+	// 공유할 때마다 참조 카운트를 이용해서 메모리를 관리하는
+	// 스마트 포인터.
+
+	//shared_ptr<File> sptr1(new File());
+	//cout << sptr1.use_count() << endl;
+
+	//shared_ptr<File> sptr2 = sptr1;
+	//cout << sptr1.use_count() << endl;
+
+	shared_ptr<Player> player1 = make_shared<Player>();
+	shared_ptr<Player> player2 = make_shared<Player>();
+
+	player1->SetPartner(player2);
+	player2->SetPartner(player1);
+
+
+
+#pragma endregion
+
+
+
 
 	return 0;
 }

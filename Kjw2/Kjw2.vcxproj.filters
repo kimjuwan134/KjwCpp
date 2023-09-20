@@ -19,11 +19,11 @@
     <Filter Include="Source Files\Mechanics">
       <UniqueIdentifier>{14aace0e-d3bb-418d-bc32-1a942ff481fb}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Bionic">
-      <UniqueIdentifier>{85b21e8e-a4e4-4f43-b290-37246dceb298}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\Bionic">
       <UniqueIdentifier>{db1a84e8-1d9c-4295-98d8-d2197e9bf6cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Bionic">
+      <UniqueIdentifier>{cc369a60-a4a7-4354-b258-3d17e8d8b990}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -72,16 +72,16 @@
       <Filter>Header Files\Mechanics</Filter>
     </ClInclude>
     <ClInclude Include="Firebet.h">
-      <Filter>Bionic</Filter>
+      <Filter>Header Files\Bionic</Filter>
     </ClInclude>
     <ClInclude Include="Ghost.h">
-      <Filter>Bionic</Filter>
+      <Filter>Header Files\Bionic</Filter>
     </ClInclude>
     <ClInclude Include="Marine.h">
-      <Filter>Bionic</Filter>
+      <Filter>Header Files\Bionic</Filter>
     </ClInclude>
     <ClInclude Include="Unit.h">
-      <Filter>Bionic</Filter>
+      <Filter>Header Files\Bionic</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
