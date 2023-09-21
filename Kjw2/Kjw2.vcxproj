@@ -132,6 +132,7 @@
     <ClCompile Include="Ghost.cpp" />
     <ClCompile Include="Goliath.cpp" />
     <ClCompile Include="Kjw2.cpp" />
+    <ClCompile Include="LinkedList.cpp" />
     <ClCompile Include="Marine.cpp" />
     <ClCompile Include="Mechanic.cpp" />
     <ClCompile Include="SiegeTank.cpp" />
@@ -142,6 +143,7 @@
     <ClInclude Include="Firebet.h" />
     <ClInclude Include="Ghost.h" />
     <ClInclude Include="Goliath.h" />
+    <ClInclude Include="LinkedList.h" />
     <ClInclude Include="Marine.h" />
     <ClInclude Include="Mechanic.h" />
     <ClInclude Include="SiegeTank.h" />
