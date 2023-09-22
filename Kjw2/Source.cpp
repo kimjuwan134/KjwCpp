@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-	int A;
+	int a, b;
 	int arr[30] = {0, };
 
 	//for (int i = 0; i < 30; i++)
@@ -21,7 +21,7 @@ int main()
 	{
 		if (arr[i] == 0)
 		{
-
+			a = arr[i];
 		}
 	}
 

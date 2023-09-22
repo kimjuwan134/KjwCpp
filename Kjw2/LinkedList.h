@@ -6,6 +6,7 @@ class LinkedList
 {
 private :
 	T data;
+	int data1;
 
 public :
 	LinkedList() = default;
