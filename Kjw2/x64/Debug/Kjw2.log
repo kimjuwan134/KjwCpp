@@ -1,5 +1,6 @@
-﻿  Inventory.cpp
-  Item.cpp
+﻿  InputKey.cpp
+C:\Users\Administrator\Desktop\김주완2\KjwCpp\Kjw2\InputKey.cpp(39,21): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
+C:\Users\Administrator\Desktop\김주완2\KjwCpp\Kjw2\InputKey.cpp(39,24): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
   Kjw2.cpp
-  코드를 생성하고 있습니다...
-  Kjw2.vcxproj -> C:\Users\Admin\Desktop\KjwCpp\Kjw2\x64\Debug\Kjw2.exe
+  Generating Code...
+  Kjw2.vcxproj -> C:\Users\Administrator\Desktop\김주완2\KjwCpp\Kjw2\x64\Debug\Kjw2.exe
