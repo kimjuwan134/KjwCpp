@@ -10,8 +10,6 @@ Inventory::Inventory(int x, int y)
 	{
 		items[i].SetCheck(false);
 	}
-
-
 }
 
 void Inventory::Renderer()

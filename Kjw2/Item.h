@@ -1,6 +1,9 @@
 #pragma once
 #include <iostream>
 
+using namespace std;
+
+
 class Item
 {
 private :
@@ -9,8 +12,7 @@ private :
 	bool check;
 
 public :
-	int x = 0;
-	Item(int price = 0, const char * name= "");
+	Item(int price = 0, const char * name = "");
 
 	void SetCheck(bool check);
 
