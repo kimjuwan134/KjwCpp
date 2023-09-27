@@ -14,6 +14,8 @@ private :
 public :
 	Item(int price = 0, const char * name = "");
 
+	void Information();
+	void SetItem(const char * name, int price);
 	void SetCheck(bool check);
 
 	bool GetCheck();

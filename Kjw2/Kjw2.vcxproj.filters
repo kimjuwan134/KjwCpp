@@ -37,6 +37,12 @@
     <Filter Include="Source Files\etc">
       <UniqueIdentifier>{4040ddf2-e38b-40a0-a9a4-50445b905c65}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Inventory">
+      <UniqueIdentifier>{010a6b4d-2dcf-45dd-9a38-367c7cd41327}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Inventory">
+      <UniqueIdentifier>{0a651a0b-b174-43f7-8723-a38533e9ec56}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Goliath.cpp">
@@ -87,14 +93,14 @@
     <ClCompile Include="Player.cpp">
       <Filter>Source Files\etc</Filter>
     </ClCompile>
+    <ClCompile Include="InputKey.cpp">
+      <Filter>Source Files\Inventory</Filter>
+    </ClCompile>
     <ClCompile Include="Inventory.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Inventory</Filter>
     </ClCompile>
     <ClCompile Include="Item.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="InputKey.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Inventory</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -146,14 +152,14 @@
     <ClInclude Include="Player.h">
       <Filter>Header Files\etc</Filter>
     </ClInclude>
+    <ClInclude Include="InputKey.h">
+      <Filter>Header Files\Inventory</Filter>
+    </ClInclude>
     <ClInclude Include="Inventory.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Inventory</Filter>
     </ClInclude>
     <ClInclude Include="Item.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="InputKey.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Inventory</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -1,6 +1,2 @@
-﻿  InputKey.cpp
-C:\Users\Administrator\Desktop\김주완2\KjwCpp\Kjw2\InputKey.cpp(39,21): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
-C:\Users\Administrator\Desktop\김주완2\KjwCpp\Kjw2\InputKey.cpp(39,24): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
-  Kjw2.cpp
-  Generating Code...
+﻿  Kjw2.cpp
   Kjw2.vcxproj -> C:\Users\Administrator\Desktop\김주완2\KjwCpp\Kjw2\x64\Debug\Kjw2.exe

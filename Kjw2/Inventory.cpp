@@ -1,4 +1,5 @@
 #include "Inventory.h"
+#include "InputKey.h"
 
 
 Inventory::Inventory(int x, int y)
@@ -11,6 +12,20 @@ Inventory::Inventory(int x, int y)
 	for (int i = 0; i < size; i++)
 	{
 		items[i].SetCheck(false);
+	}
+}
+
+void Inventory::ShowItem(InputKey inputKey)
+{
+	inputKey.GotoXY(0, 10);
+
+	if (items[selectIndex].GetCheck() != false)
+	{
+		items[selectIndex].Information();
+	}
+	else
+	{
+		cout << "Item이 존재하지 않습니다." << endl;
 	}
 }
 
@@ -43,6 +58,7 @@ void Inventory::AddItem()
 	{
 		if (items[i].GetCheck() == false)
 		{
+			items[i].SetItem("포션", 100);
 			items[i].SetCheck(true);
 			break;
 		}
@@ -57,4 +73,12 @@ void Inventory::AddItem()
 	}
 }
 
+void Inventory::SelectNumber(InputKey inputkey)
+{
+	int resultx = inputkey.GetX() / 2;
+
+	int resulty = inputkey.GetY() * lineX;
+
+	selectIndex = resultx + resulty;
+}
 

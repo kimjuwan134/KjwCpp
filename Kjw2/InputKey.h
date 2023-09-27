@@ -15,12 +15,12 @@ private :
 	char key;
 
 public :
-	int GetX();
-	int GetY();
-
 	InputKey();
 	void Move();
 	void GotoXY(int x, int y);
+
+	int GetX();
+	int GetY();
 
 };
 
