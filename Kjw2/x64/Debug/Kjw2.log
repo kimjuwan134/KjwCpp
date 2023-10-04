@@ -1,8 +1,2 @@
-﻿  InputKey.cpp
-C:\Users\Administrator\Desktop\김주완2\KjwCpp\Kjw2\InputKey.cpp(49,21): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
-C:\Users\Administrator\Desktop\김주완2\KjwCpp\Kjw2\InputKey.cpp(49,24): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
-  Inventory.cpp
-  Kjw2.cpp
-C:\Users\Administrator\Desktop\김주완2\KjwCpp\Kjw2\Kjw2.cpp(86,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-  Generating Code...
+﻿  Kjw2.cpp
   Kjw2.vcxproj -> C:\Users\Administrator\Desktop\김주완2\KjwCpp\Kjw2\x64\Debug\Kjw2.exe
