@@ -1,57 +1,47 @@
 #include <iostream>
-#include <stack>
-#include <queue>
+#include <list>
 
 using namespace std;
 
 
-#pragma region 컨테이너 어댑터
-
-// 기존 컨테이너의 인터페이스를 제한하여 만든 기능이 제한되거나 변형된 컨테이너.
-
-#pragma endregion
-
-
 int main()
 {
-#pragma region 컨테이너 어댑터 (stack)
+#pragma region 문자열
+	
+	/*string content = "Content";
 
-	//stack<int> stack;
+	cout << "content 변수의 값 : " << content << endl;
+	cout << "content 변수의 값 : " << content.length() << endl;
 
-	//stack.push(10);
-	//stack.push(20);
-	//stack.push(30);
-	//stack.push(40);
-	//stack.push(50);
-
-	//cout << "stack의 Top : " << stack.top() << endl;
-
-	//int a = stack.size();
-
-	//for (int i = 0; i < a; i++)
-	//{
-	//	cout << stack.top() << endl;
-	//	stack.pop();
-	//}
+	cout << content.find("en") << endl;*/
 
 #pragma endregion
 
-#pragma region 컨테이너 어댑터 (Queue)
+#pragma region 연관 컨테이너
 
-	queue<int> queue;
+	// KEY와 VALUE가 하나의 구성으로 이루어진 컨테이너.
 
-	queue.push(10);
-	queue.push(20);
-	queue.push(30);
-	queue.push(40);
+	list<int> dataList;
 
-	while (queue.size())
+	dataList.push_back(10);
+	dataList.push_front(50);
+	dataList.push_front(25);
+	dataList.push_back(33);
+	
+	// dataList.begin() : 첫 번째 주소를 반환
+	// dataList.end() : 마지막에 있는 그 다음 주소를 반환
+
+	list<int>::iterator iter;
+
+	for (iter = dataList.begin(); iter != dataList.end(); iter++)
 	{
-		cout << queue.front() << endl;
-		queue.pop();
+		cout << *iter << endl;
 	}
 
 #pragma endregion
+
+
+
 
 
 
